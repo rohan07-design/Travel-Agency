@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomePagesControllers {
+public class AllPagesControllers {
 
 	@RequestMapping("/")
 	public String homePage() {
@@ -49,5 +49,20 @@ public class HomePagesControllers {
 	@RequestMapping("/booking-hotel")
 	public String bookingHotel() {
 		return "booking-hotel";
+	}
+	
+	@RequestMapping("/booking-car-rentals")
+	public String bookingCarRentals() {
+		return "booking-car-rentals";
+	}
+	
+	@RequestMapping("/booking-flight")
+	public String bookingFlight() {
+		return "booking-flight";
+	}
+	
+	@RequestMapping("/booking-slider")
+	public String bookingSlider() {
+		return "booking-slider";
 	}
 }
